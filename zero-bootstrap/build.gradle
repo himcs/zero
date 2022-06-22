@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+}
+
+style {
+    excludePackages = [
+    ]
+    excludeClasses = [
+            'io.github.himcs.zero.bootstrap.Bootstrap'
+    ]
+}
+
+coverage {
+    excludePackages = [
+    ]
+    excludeClasses = [
+            'io.github.himcs.zero.bootstrap.Bootstrap'
+    ]
+}
+
+springBoot {
+    mainClass = 'io.github.himcs.zero.bootstrap.Bootstrap'
+}
