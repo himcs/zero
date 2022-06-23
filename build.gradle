@@ -65,6 +65,11 @@ subprojects {
     ]
 }
 
+configure(subprojects - project(':zero-bootstrap')) {
+    project(':zero-bootstrap').dependencies {
+        implementation(project)
+    }
+}
 
 apply from: "$rootDir/gradle/config/scripts/idea.gradle"
 
